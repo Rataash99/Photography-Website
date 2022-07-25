@@ -1,1 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    background-color: black;
+    color: rgb(158, 158, 158);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* header */
+header::before {
+    content: "";
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./Images/man-the-camera-smoke.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity:0.6
+}
+
+#bgimg {
+    /* border: 2px solid red; */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar {
+    /* border: 1px solid red; */
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 3.5rem;
+    box-shadow: inset 0px 0px 50px black;
+}
+
+#logo {
+    /* border: 2px solid red; */
+    height: 3.6rem;
+    width: 8.5rem;
+}
+
+ul {
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+ul li {
+    /* border: 1px solid yellowgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    list-style: none;
+    margin: 0px 15px;
+}
+
+ul li a {
+    /* border: 2px solid red; */
+    padding: 5px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(158, 158, 158);
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    text-underline-offset: 5px;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: rgb(164, 81, 81);
+}
+
+#contact-logo {
+    /* border:2px solid green; */
+    margin: 10px 10px;
+}
+
+#contact-logo i {
+    /* border: 2px solid red; */
+    margin: 8px;
+}
+#contact-logo i:hover {
+    /* border: 2px solid red; */
+    padding: 1px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 3px rgb(164, 81, 81);
+}
+
+.fa-facebook {
+    color: rgb(57, 134, 234);
+}
+
+.fa-instagram {
+    color: rgb(237, 115, 135);
+}
+
+.fa-twitter {
+    color: rgb(115, 195, 217);
+}
+
+.fa-linkedin {
+    /* border: 2px solid red; */
+    color: rgb(0, 136, 255);
+}
+.hamburger{
+    /* border: 2px solid red; */
+    display: none;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:rgb(158, 158, 158);
+    margin: 20px;
+    height:24px;
+}
+
+/* home css */
+#home {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90vh;
+    width: 90vw;
+}
+
+.homecontent {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 35vh;
+    width: auto;
+}
+
+.homecontent h1 {
+    font-weight: lighter;
+    font-size: 3.8rem;
+    transition: 0.6s;
+}
+
+.homecontent a {
+    border: 1px solid rgb(158, 158, 158);
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-align: center;
+    color: rgb(158, 158, 158);
+    padding: 10px;
+    border-radius: 3px;
+    width: 160px;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+
+.homecontent a:hover {
+    color: rgb(164, 81, 81);
+    border: 1px solid transparent;
+    box-shadow: inset 0px 0px 10px rgb(158, 158, 158);
+}
+
+/* bnw section  */
+#bnw {
+    /* border: 2px solid red; */
+    margin-top: 105px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bnwContent {
+    /* border:2px solid red; */
+    font-weight: lighter;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 12vh;
+}
+
+#bnwImages {
+    /* border: 2px solid green; */
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+}
+
+/* editorials section*/
+#editorial {
+    /* border: 2px solid red; */
+    /* background-color: rgb(22, 22, 22); */
+    margin-top: 105px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.editorialContent {
+    /* border:2px solid red; */
+    font-weight: lighter;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 12vh;
+}
+
+#editorialImages {
+    /* border: 2px solid green; */
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+}
+
+/* about section */
+#about {
+    /* border: 2px solid red; */
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img {
+    /* border: 2px solid green; */
+    margin: 22px;
+    height: 40rem;
+    width: 28rem;
+    transition-property: all;
+    transition-duration: 1.8s;
+}
+
+#about img:hover {
+    height: 43rem;
+    width: 30rem;
+    box-shadow: 0px 0px 20px 4px rgb(103, 47, 47);
+}
+
+.aboutcontent {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40vw;
+    height: 40vh;
+    padding: 0px 30px;
+}
+
+.aboutcontent :nth-child(3) {
+    box-shadow: -2px 0px 0px rgb(133, 55, 55);
+    padding-left: 6px;
+}
+
+.aboutcontent a { 
+    border: 1px solid rgb(158, 158, 158);
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-align: center;
+    color: rgb(158, 158, 158);
+    padding: 8px;
+    border-radius: 3px;
+    width: 5rem;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+
+.aboutcontent a:hover {
+    color: rgb(135, 75, 75);
+    border: 1px solid transparent;
+    box-shadow: inset 0px 0px 10px rgb(158, 158, 158);
+}
+
+/* contact section  */
+#contact {
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contact > p{
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 0px 22px;
+}
+
+.contact_content {
+    /* border: 2px solid blue; */
+    color: rgb(122, 58, 58);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50rem;
+}
+
+.iconNContent {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 10rem;
+    height: 12rem;
+    text-align: center;
+}
+.iconNContent i{
+    /* border: 2px solid yellow; */
+    margin:0.6rem;
+    font-size: 5rem;
+    padding: 1.7rem;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 1px black, 0px 0px 10px 0px rgb(135, 75, 75);
+}
+.iconNContent p{
+    /* border: 2px solid red; */
+    color:rgb(158, 158, 158);
+    display: flex;
+    height: 2rem;
+    flex-direction: column;
+}
+
+form {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 50vw;
+    height:50vh;
+}
+
+input,
+textarea {
+    border: 0;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+    border: 0;
+    outline: 0;
+    color: rgb(194, 175, 175);
+}
+
+input:focus {
+    outline: none !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(194, 175, 175);
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid rgb(158, 158, 158);
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-align: center;
+    color: rgb(158, 158, 158);
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: 5rem;
+    transition-property: all;
+    transition-duration: 0.4s;
+    align-self: center;
+}
+
+.btn:hover {
+    color: rgb(164, 81, 81);
+    border: 1px solid transparent;
+    box-shadow: inset 0px 0px 10px rgb(158, 158, 158);
+}
+
+footer {
+    /* border: 2px solid red; */
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 1rem;
+}
+
+/* Utility CSS */
+h2 {
+    font-size: 1.6rem;
+    text-decoration-color: rgb(133, 55, 55);
+    text-decoration-line: underline;
+    animation-name: editorial;
+    text-underline-offset: 5px;
+}
+p {
+    /* border: 2px solid red; */
+    font-size: 0.9rem;
+}
+img{
+    margin: 0px 10px;
+    width: 50rem;
+    height: 30rem;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+img:hover {
+    /* position: absolute; */
+    width: 52rem;
+    height: 32rem;
+    box-shadow: 0px 0px 20px 2px rgb(164, 81, 81);
+}
