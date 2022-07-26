@@ -49,35 +49,6 @@
             display: none;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /* home */
     .homecontent h1 {
         /* border: 2px solid red; */
@@ -242,7 +213,7 @@
 }
 @media only screen and (max-width: 1050px) and (max-height:600px){
     .aboutContent{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         height: 50vh;
     }
 }
