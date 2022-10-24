@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Rataash99/HTML-CSS-Mini-Project--Photography-Website)
-- Live Site URL: [https://shutter-zone.netlify.app/)
+- Solution URL: [GitHub Link](https://github.com/Rataash99/HTML-CSS-Mini-Project--Photography-Website)
+- Live Site URL: [Hosted here](https://shutter-zone.netlify.app/)
 
 ### Built with
 
